@@ -228,13 +228,35 @@ Reset zoom: `Control-0`
 
 # Instructions
 
-1. Install requirements 
+1. Install [direnv](https://github.com/direnv/direnv).
 
-    ```pip install -r requirements.txt```
-2. Set environmental variables for `OPENAI_API_KEY`, `GOOSEAI_API_KEY`, `AI21_API_KEY` 
+1. Use the `.envrc.sample` as a template for your `.envrc`.
+   ```
+   cp .envrc.sample .envrc
+   ```
 
-    ```export OPENAI_API_KEY={your api key}```
-3. Run main.py
-4. Load a json tree
-5. Read  :)
+1. Add your API key to `.envrc`.
 
+1. Install python 3.9 with [pyenv](https://github.com/pyenv/pyenv).
+
+1. Set up venv in the project root.
+   ```
+   python -m venv venv
+   ```
+
+1. Activate venv.
+   ```
+   source venv/bin/activate
+   ```
+
+1. Install requirements.
+   ```
+   pip install -r requirements.txt
+   ```
+
+3. Run `main.py`.
+   ```
+   python main.py
+   ```
+4. Load a json tree.
+5. Read :)
